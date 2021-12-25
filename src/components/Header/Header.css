@@ -1,0 +1,80 @@
+li, a, button {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background: rgb(252, 250, 250);
+}
+
+.logo {
+    margin-right: auto;
+    cursor: pointer;
+    width:120px;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 12px;
+    cursor: pointer;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+button {
+    margin-left: 3px;
+    padding: 9px 25px;
+    border: none;
+    cursor: pointer;
+    background: orange;
+    color:white;
+}
+
+@media(max-width: 940px) {
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left:0;
+        height: 100vh;
+        width:100%;
+        display:block !important;
+        background: #111;
+        color:white;
+        z-index: 10;
+        text-align: center;
+        list-style: initial !important;
+        margin: initial !important;
+    }
+    nav ul li {
+        margin: 40px 0;
+          display: list-item !important;
+          font-size: 20px !important;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    .close {
+        display: none;
+    }
+}
+
+.menu {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+@media(min-width: 941px) {
+    .menu {
+        display: none;
+    }
+}
